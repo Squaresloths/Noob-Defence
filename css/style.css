@@ -3,11 +3,16 @@ body {
 	float: none;
 	margin: auto;
 	padding: 0px;
+	height: 900px;
+	width: 2000px
 }
 header {
-	width: 100%;
+	width: 99%;
 	display: inline-block;
 	padding: 0px;
+	border-style: inset;
+	border-width: 5px;
+	border-color: black;
 }
 .aside-left {
 	width: 20%;
@@ -97,6 +102,13 @@ footer {
 /* Hide the link that should open and close the topnav on small screens */
 .topnav .icon {
   display: none;
+}
+h1{
+	border-top-style: inset;
+	border-bottom-style: inset;
+	border-left-style: double;
+	border-left-width: 10px;
+	border-left-color: purple;
 }
 	
 	
