@@ -1,0 +1,22 @@
+body {
+	max-width: 500px;
+	float: none;
+	margin: auto;
+	padding: 0px;
+	height: 900px;
+	width: 2000px
+}
+header{
+	border-style: solid;
+	border-width: 3px;
+	border-color: black;
+	border-radius: 13px;
+	background-color: purple;
+}
+h1{
+	border-style: inset;
+	border-width: 3px;
+	border-color: black;
+	border-radius: 13px;
+	background-color: purple;
+}
