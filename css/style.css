@@ -110,5 +110,9 @@ h1{
 	border-left-width: 10px;
 	border-left-color: purple;
 }
-	
-	
+button:hover{
+	background-color: black;
+}
+button:active{
+	background-color: purple;
+}	
