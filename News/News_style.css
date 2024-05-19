@@ -1,0 +1,29 @@
+body {
+	max-width: 800px;
+	float: none;
+	margin: auto;
+	padding: 0px;
+	height: 10000px;
+	width: 2000px
+}
+header{
+	border-style: solid;
+	border-width: 3px;
+	border-color: black;
+	border-radius: 13px;
+	background-color: purple;
+}
+h1{
+	border-style: inset;
+	border-width: 4px;
+	border-color: black;
+	border-radius: 13px;
+	background-color: purple;
+}
+p{
+	border-style: outset;
+	border-width: 6px;
+	border-color: black;
+	border-radius: 13px;
+	background-color: purple;
+}
