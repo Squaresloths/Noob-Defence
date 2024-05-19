@@ -1,11 +1,16 @@
-#box1{
-	border: 5px;
-	width: 250px;
-	height: 250px;
-	font-size: 22px;
-	background:"white";
-	
-	padding: 10px;
+body {
+	max-width: 500px;
+	float: none;
+	margin: auto;
+	padding: 0px;
+	height: 900px;
+	width: 2000px
 }
-body{
+header{
+	border-style: solid;
+	border-width: 3px;
+	border-color: black;
+	border-radius: 13px;
+	background-color: purple;
+}
 	
