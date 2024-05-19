@@ -27,3 +27,9 @@ p{
 	border-radius: 13px;
 	background-color: purple;
 }
+button:hover{
+	background-color: black;
+}
+button:active{
+	background-color: purple;
+}
