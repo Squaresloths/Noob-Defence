@@ -124,5 +124,6 @@ h5{
 	border-style: solid;
 	border-color: #797979;
 	border-width: 5px;
+	border-radius: 13px;
 	background-color: black;
 }
