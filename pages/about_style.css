@@ -33,6 +33,9 @@ button:hover{
 button:active{
 	background-color: purple;
 }
+button{
+	border-color: red;
+}
 h5{
 	border-style: outset;
 	border-color: black;
