@@ -26,3 +26,6 @@ button:hover{
 button:active{
 	background-color: purple;
 }
+button{
+	border-color: red;
+}
