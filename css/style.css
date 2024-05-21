@@ -137,3 +137,10 @@ h5{
 	border-radius: 13px;
 	background-color: black;
 }
+h5{
+	border-style: solid;
+	border-color: grey;
+	border-width: 5px;
+	border-radius: 13px;
+	background-color: #E3D9F7;
+}
