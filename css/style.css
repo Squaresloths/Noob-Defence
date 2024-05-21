@@ -28,6 +28,13 @@ main {
 	min-height: 300px;
 	background-color: #e6e6e6;
 }
+container{
+    width: 60%;
+	float: left;
+	display: block;
+	height: 100px;
+	background-color: white;
+}
 aside {
 	width: 20%;
 	float: right;
