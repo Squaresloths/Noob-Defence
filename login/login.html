@@ -4,26 +4,182 @@
      <title> LOGIN | NoobDefence.com </title>
 	<meta charset="utf-8">
 	<title> Login </title>
-	<link rel="stylesheet" href="login/login_style.css">
-  </head>
-  <body style="background-color: #4C1F68">
-    <h1> Hello! please login:  </h1>
-	<p class="p-welcome"> </p>
-    </body>
+</head>
+<body style="background-color: #4C1F68">
+<p class="p-welcome"> </p>
+  </body>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: url(https://cdn.discordapp.com/attachments/1122069707894313111/1242518547960430695/NoobOrganisation.png?ex=664f7292&is=664e2112&hm=c1d8d5af1161b13e803ad4bc16e22659d576f0c129161f47bc6f5787573d1e28&) no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+    .wrapper{
+    position: relative;
+    width: 400px;
+    height: 440px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.wrapper .form-box{
+  width: 100%;
+  padding: 40px;
+}
+
+.wrapper .icon-close{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 45px;
+  height: 45px;
+  background: black;
+  font-size: 2em;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom-left-radius: 20px;
+    cursor: pointer;
+    z-index: 1;
+}
+.form-box h2 {
+  font-size: 2em;
+  text-align: center;
+}
+.input-box {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  border-bottom: 2px solid black;
+  margin: 30px 0;
+}
+
+.input-box label{
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  font-size: 1em;
+  color: black;
+  font-weight: 500;
+  pointer-events: none;
+  transition: .5s;
+}
+
+.input-box input:focus~label,
+.input-box input:valid~label {
+  top: -5px;
+}
+.input-box input{
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 1em;
+  color: black;
+  font-weight: 600;
+}
+
+.input-box .icon{
+  position: absolute;
+  right: 8px;
+  font-size: 1.2em;
+  color: black;
+  line-height: 57px;
+}
+
+.remember-forgot {
+  font-size: .9em;
+  color: black;
+  font-weight: 500;
+  margin: -15px 0 15px;
+}
+
+.remember-forgot a {
+  color: black;
+  text-decoration: none;
+}
+
+.remember-forgot a:hover{
+  text-decoration: underline;
+}
+.btn {
+  width: 100%;
+  height: 45px;
+  background: black;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1em;
+  color: #fff;
+  font-weight: 500;
+}
+
+.login-register{
+  font-size: .9em;
+  color: black;
+  text-align: center;
+  font-weight: 500;
+  margin: 25px 0 10px;
+}
+
+.login-register p a {
+  color: black;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.login-register p a:hover {
+  text-decoration: underline;
+}
+  </style>
   <div class="wrapper">
+    <span class="icon-close">
+       <ion-icon name="close"></ion-icon>
+    </span>
     <div class="form-box login">
-        <h2>Login:</h2>
+        <h2 style="color: purple">Login:</h2>
         <form action="#">
             <div class="input-box">
+              <span class="icon">
+                <ion-icon name="mail">
+                </ion-icon></span>
                 <span class="icon"></span>
                 <input type="email" reuired>
-                <label>Email</label>
+                <label style="color: purple">Email</label>
               </div>
                 <div class="input-box">
-                    <span class="icon"></span>
+                  <span class="icon">
+                    <ion-icon name="lock-closed"></ion-icon>
+                  </span>
                     <input type="password" reuired>
-                    <label>Password</label>
+                    <label style="color: purple">Password</label>
                 </div>
+                <div class="remember-forgot">
+                  <label style="color: purple"><input type="checkbox"><b>Remember me</b></label><br>
+                  <a href="#" style="color: red">Forgot Password?</a>
+                </div>
+                <button type="submit" class="btn">Login</button>
+                <div class="login-register"></div>
+              <p style="color: purple"><b>Don`t have an account?</b><a href="register.html" class="register-link" style="color: red">Register here</a></p>
         </form>
     </div>
   </div>
