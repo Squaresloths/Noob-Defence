@@ -3,8 +3,8 @@ body {
 	float: none;
 	margin: auto;
 	padding: 0px;
-	height: 900px;
-	width: 2000px
+	height: 1000px;
+	width: 3000px
 }
 header {
 	width: 99%;
@@ -20,6 +20,7 @@ header {
 	display: block;
 	min-height: 300px;
 	background-color: #e6e6e6;
+	height: 400px;
 }
 main {
 	width: 60%;
@@ -27,6 +28,7 @@ main {
 	display: block;
 	min-height: 300px;
 	background-color: #e6e6e6;
+	height: 400px;
 }
 container{
     width: 60%;
@@ -41,6 +43,7 @@ aside {
 	display: block;
 	min-height: 300px;
 	background-color: #e6e6e6;
+	height: 400px;
 }
 footer {
 	width: 100%;
