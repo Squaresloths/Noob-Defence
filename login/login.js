@@ -1,9 +1,11 @@
-let username;
+const wrapper = document.querySelector|(`.wrapper`)
+const loginLink = document.querySelector|(`.login-link`)
+const registerLink = document.querySelector|(`.register-link`)
 
-document.getElementById("myButton").onclick = function(){
-      username = document.getElementById("myText").value
-      document.getElementById("myH2").textContent = `Hello ${username}!`
-}
+registerLink.addEventListener(`click`, ()=> {
+    wrapper.classList.add(`active`);
+});
 
-// SWITCH - can be an efficient replacement to many else if statements
-//.checked - property that determines the checked state of a HTML checkbox or radio button element
+loginLink.addEventListener(`click`, ()=> {
+    wrapper.classList.remove(`active`);
+});
