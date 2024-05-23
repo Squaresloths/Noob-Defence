@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
      <title> LOGIN | NoobDefence.com </title>
 	<meta charset="utf-8">
 	<title> Login </title>
 </head>
-<body style="background-color: #4C1F68">
-<p class="p-welcome"> </p>
+<body>
   </body>
   <style>
     *{
@@ -37,9 +39,25 @@
     align-items: center;
     overflow: hidden;
 }
+
+.wrapper.active {
+  height: 520px;
+}
+
 .wrapper .form-box{
   width: 100%;
   padding: 40px;
+}
+
+.wrapper.active .form-box.login{
+  transition: transform .18s ease;
+  transform: translateX(0);
+}
+
+.wrapper .form-box.register{
+  position: absolute;
+  transform: translateX(400px);
+
 }
 
 .wrapper .icon-close{
@@ -84,7 +102,7 @@
 
 .input-box input:focus~label,
 .input-box input:valid~label {
-  top: -5px;
+  top: 5px;
 }
 .input-box input{
   width: 100%;
@@ -95,6 +113,7 @@
   font-size: 1em;
   color: black;
   font-weight: 600;
+  padding: 0 35px 0 5px;
 }
 
 .input-box .icon{
@@ -110,6 +129,11 @@
   color: black;
   font-weight: 500;
   margin: -15px 0 15px;
+}
+
+.remember-forgot label input{
+  accent-color: black;
+  margin-right: 3px;
 }
 
 .remember-forgot a {
@@ -152,6 +176,7 @@
 }
   </style>
   <div class="wrapper">
+    <div class="wrapper-active"></div>
     <span class="icon-close">
        <ion-icon name="close"></ion-icon>
     </span>
@@ -164,25 +189,24 @@
                 </ion-icon></span>
                 <span class="icon"></span>
                 <input type="email" reuired>
-                <label style="color: purple">Email</label>
+                <label style="color: purple"><b>Email</b></label>
               </div>
                 <div class="input-box">
                   <span class="icon">
                     <ion-icon name="lock-closed"></ion-icon>
                   </span>
                     <input type="password" reuired>
-                    <label style="color: purple">Password</label>
+                    <label style="color: purple"><b>Password</b></label>
                 </div>
                 <div class="remember-forgot">
                   <label style="color: purple"><input type="checkbox"><b>Remember me</b></label><br>
-                  <a href="#" style="color: red">Forgot Password?</a>
+                  <a href="forgot.html" style="color: red">Forgot Password?</a>
                 </div>
                 <button type="submit" class="btn">Login</button>
                 <div class="login-register"></div>
               <p style="color: purple"><b>Don`t have an account?</b><a href="register.html" class="register-link" style="color: red">Register here</a></p>
         </form>
     </div>
-  </div>
   <script src="login.js"></script>
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
