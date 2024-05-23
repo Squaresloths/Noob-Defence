@@ -1,0 +1,29 @@
+body{
+    min-height: 100vh;
+    background: url(https://cdn.discordapp.com/attachments/1122069707894313111/1242518547960430695/NoobOrganisation.png?ex=664f7292&is=664e2112&hm=c1d8d5af1161b13e803ad4bc16e22659d576f0c129161f47bc6f5787573d1e28&) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+header{
+	border-style: solid;
+	border-width: 3px;
+	border-color: black;
+	border-radius: 13px;
+	background-color: purple;
+}
+h1{
+	border-style: inset;
+	border-width: 3px;
+	border-color: black;
+	border-radius: 13px;
+	background-color: purple;
+}
+button:hover{
+	background-color: black;
+}
+button:active{
+	background-color: purple;
+}
+button{
+	border-color: red;
+}
