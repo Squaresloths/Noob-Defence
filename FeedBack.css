@@ -1,0 +1,8 @@
+body{
+    border-style: inset;
+    border-radius: 6px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1em;
+    background-color: red;
+    border-color: black;
+}
